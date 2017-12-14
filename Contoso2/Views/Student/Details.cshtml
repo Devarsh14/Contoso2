@@ -3,13 +3,14 @@
     ViewBag.Title = "Details";
 }
 
+@foreach (var item in Model.Enrollments)
+{
+ 
+    @item.Course.Title
+    @item.Grade
+
+}
 <table>
-    <tr>
-        <td>
-
-        </td>
-
-    </tr>
 
     <tr>
         <td>
