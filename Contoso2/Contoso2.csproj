@@ -208,6 +208,14 @@
     <Compile Include="Migrations\201712141225593_PopulateStudentTable2.Designer.cs">
       <DependentUpon>201712141225593_PopulateStudentTable2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712141235342_PopulateCoursesTable.cs" />
+    <Compile Include="Migrations\201712141235342_PopulateCoursesTable.Designer.cs">
+      <DependentUpon>201712141235342_PopulateCoursesTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712141244054_PopulateEnrollmentTable.cs" />
+    <Compile Include="Migrations\201712141244054_PopulateEnrollmentTable.Designer.cs">
+      <DependentUpon>201712141244054_PopulateEnrollmentTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
@@ -302,6 +310,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712141225593_PopulateStudentTable2.resx">
       <DependentUpon>201712141225593_PopulateStudentTable2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712141235342_PopulateCoursesTable.resx">
+      <DependentUpon>201712141235342_PopulateCoursesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712141244054_PopulateEnrollmentTable.resx">
+      <DependentUpon>201712141244054_PopulateEnrollmentTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
