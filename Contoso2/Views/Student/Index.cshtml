@@ -23,7 +23,8 @@
     {
     <tr>
         <td>
-            @Html.DisplayFor(modelitem => item.LastName)
+          
+            @Html.ActionLink(item.LastName, "Details", "Student", new { id=item.ID},null)
         </td>
         <td>
             @Html.DisplayFor(modelitem => item.FirstMidName)

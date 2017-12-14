@@ -16,5 +16,13 @@ namespace Contoso2.Controllers
             var Students =db.Students.ToList();
             return View(Students);
         }
+
+
+        public ActionResult Details(int? id)
+        {
+            var student2 = db.Students.SingleOrDefault(c => c.ID == id);
+
+            return View(student2);
+        }
     }
 }
