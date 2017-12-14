@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Contoso2.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.FirstMidName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.EnrollmentDate)
+        </th>
+    </tr>
+
+
+    @foreach(var item in Model)
+    {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelitem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelitem => item.FirstMidName)
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelitem => item.EnrollmentDate )
+    </td>
+
+    </tr>
+        
+    }
+</table>
