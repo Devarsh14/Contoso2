@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Contoso2.Models.Course>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CourseID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Credits)
+        </th>
+    </tr>
+
+    @foreach(var course in Model)
+    {
+    <tr>
+        <td>
+            
+            @Html.ActionLink(course.Title, "Details", "Course", new { id = course.CourseID },null)
+            
+        </td>
+        <td> @course.CourseID</td>
+        <td> @course.Credits</td>
+    </tr>
+    }
+</table>
