@@ -25,5 +25,10 @@ namespace Contoso2.Controllers
             var CourseDetails = db.Courses.SingleOrDefault(c=>c.CourseID==id);
             return View(CourseDetails);
         }
+
+        public ActionResult New()
+        {
+            return View();
+        }
     }
 }

@@ -24,5 +24,20 @@ namespace Contoso2.Controllers
 
             return View(student2);
         }
+
+        public ActionResult New()
+        {
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(Student studentcreate)
+        {
+            db.Students.Add(studentcreate);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Student");
+        }
     }
 }

@@ -1,0 +1,32 @@
+﻿@model Contoso2.Models.Student
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>New Studnent</h2>
+
+
+@using (Html.BeginForm("Create", "Student"))
+{
+    <div class="form-group ">
+
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+    </div>
+
+
+    <div class="form-group ">
+
+        @Html.LabelFor(m => m.FirstMidName)
+        @Html.TextBoxFor(m => m.FirstMidName, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group ">
+
+        @Html.LabelFor(m => m.EnrollmentDate)
+        @Html.TextBoxFor(m => m.EnrollmentDate, new { @class = "form-control" })
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Save</button>
+
+}
