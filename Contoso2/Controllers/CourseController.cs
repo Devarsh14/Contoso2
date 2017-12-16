@@ -30,5 +30,16 @@ namespace Contoso2.Controllers
         {
             return View();
         }
+
+
+        [HttpPost]
+        public ActionResult Create(Course addcourse)
+        {
+            db.Courses.Add(addcourse);
+            db.SaveChanges();
+
+            return RedirectToAction("Index", "Course");
+        }
+
     }
 }
