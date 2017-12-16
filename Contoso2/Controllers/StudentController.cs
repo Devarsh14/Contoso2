@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Contoso2.Models;
 using Contoso2.ViewModels;
 
+
 namespace Contoso2.Controllers
 {
     public class StudentController : Controller
