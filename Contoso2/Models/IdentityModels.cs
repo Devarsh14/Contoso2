@@ -25,6 +25,8 @@ namespace Contoso2.Models
         public DbSet<Enrollment> Enrollments { get; set; }
         public  DbSet<OfficeAssignment> OffficeAssignments{ get; set; }
         public DbSet<Instructor> Instructors { get; set; }
+        public DbSet<Department> Departments { get; set; }
+     
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

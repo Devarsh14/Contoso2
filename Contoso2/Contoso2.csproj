@@ -237,9 +237,30 @@
     <Compile Include="Migrations\201712160652251_InstructorAdded4.Designer.cs">
       <DependentUpon>201712160652251_InstructorAdded4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712171229112_updatestudenttable.cs" />
+    <Compile Include="Migrations\201712171229112_updatestudenttable.Designer.cs">
+      <DependentUpon>201712171229112_updatestudenttable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712171303145_Departmentadded.cs" />
+    <Compile Include="Migrations\201712171303145_Departmentadded.Designer.cs">
+      <DependentUpon>201712171303145_Departmentadded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712171305214_Departmentadded1.cs" />
+    <Compile Include="Migrations\201712171305214_Departmentadded1.Designer.cs">
+      <DependentUpon>201712171305214_Departmentadded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712171325365_D2.cs" />
+    <Compile Include="Migrations\201712171325365_D2.Designer.cs">
+      <DependentUpon>201712171325365_D2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712171330198_DepartmetnFinal.cs" />
+    <Compile Include="Migrations\201712171330198_DepartmetnFinal.Designer.cs">
+      <DependentUpon>201712171330198_DepartmetnFinal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Instructor.cs" />
@@ -360,6 +381,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712160652251_InstructorAdded4.resx">
       <DependentUpon>201712160652251_InstructorAdded4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712171229112_updatestudenttable.resx">
+      <DependentUpon>201712171229112_updatestudenttable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712171303145_Departmentadded.resx">
+      <DependentUpon>201712171303145_Departmentadded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712171305214_Departmentadded1.resx">
+      <DependentUpon>201712171305214_Departmentadded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712171325365_D2.resx">
+      <DependentUpon>201712171325365_D2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712171330198_DepartmetnFinal.resx">
+      <DependentUpon>201712171330198_DepartmetnFinal.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
