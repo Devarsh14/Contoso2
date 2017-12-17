@@ -1,0 +1,34 @@
+namespace Contoso2.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class InstructorAdded2 : DbMigration
+    {
+        public override void Up()
+        {
+            CreateTable(
+                "dbo.Instructors",
+                c => new
+                    {
+                        Id = c.Int(nullable: false, identity: true),
+                        LastName = c.String(),
+                        FirstMidName = c.String(),
+                        HireDate = c.DateTime(nullable: false),
+                    })
+                .PrimaryKey(t => t.Id);
+            
+            AddColumn("dbo.Courses", "Instructor_Id", c => c.Int());
+            CreateIndex("dbo.Courses", "Instructor_Id");
+            AddForeignKey("dbo.Courses", "Instructor_Id", "dbo.Instructors", "Id");
+        }
+        
+        public override void Down()
+        {
+            DropForeignKey("dbo.Courses", "Instructor_Id", "dbo.Instructors");
+            DropIndex("dbo.Courses", new[] { "Instructor_Id" });
+            DropColumn("dbo.Courses", "Instructor_Id");
+            DropTable("dbo.Instructors");
+        }
+    }
+}

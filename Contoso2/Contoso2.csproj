@@ -217,12 +217,34 @@
     <Compile Include="Migrations\201712141244054_PopulateEnrollmentTable.Designer.cs">
       <DependentUpon>201712141244054_PopulateEnrollmentTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201712160644543_officeassignment.cs" />
+    <Compile Include="Migrations\201712160644543_officeassignment.Designer.cs">
+      <DependentUpon>201712160644543_officeassignment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712160648034_InstructorAdded.cs" />
+    <Compile Include="Migrations\201712160648034_InstructorAdded.Designer.cs">
+      <DependentUpon>201712160648034_InstructorAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712160649290_InstructorAdded2.cs" />
+    <Compile Include="Migrations\201712160649290_InstructorAdded2.Designer.cs">
+      <DependentUpon>201712160649290_InstructorAdded2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712160650528_InstructorAdded3.cs" />
+    <Compile Include="Migrations\201712160650528_InstructorAdded3.Designer.cs">
+      <DependentUpon>201712160650528_InstructorAdded3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201712160652251_InstructorAdded4.cs" />
+    <Compile Include="Migrations\201712160652251_InstructorAdded4.Designer.cs">
+      <DependentUpon>201712160652251_InstructorAdded4.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\OfficeAssignment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -323,6 +345,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201712141244054_PopulateEnrollmentTable.resx">
       <DependentUpon>201712141244054_PopulateEnrollmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712160644543_officeassignment.resx">
+      <DependentUpon>201712160644543_officeassignment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712160648034_InstructorAdded.resx">
+      <DependentUpon>201712160648034_InstructorAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712160649290_InstructorAdded2.resx">
+      <DependentUpon>201712160649290_InstructorAdded2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712160650528_InstructorAdded3.resx">
+      <DependentUpon>201712160650528_InstructorAdded3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201712160652251_InstructorAdded4.resx">
+      <DependentUpon>201712160652251_InstructorAdded4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
